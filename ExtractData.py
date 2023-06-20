@@ -85,10 +85,6 @@ def ExtractData(filepath):
             Invoice__Description.pop()
         Invoice__Description=" ".join(Invoice__Description)
         Invoice__DueDate=Invoice__DueDate.split("Due date:")[-1].strip()        #
-        # Invoice__Description=Invoice__Description.split("PAYMENT")[0].split("DETAILS")[-1].strip()
-        # print(Invoice__Description)
-        # print(CustDetails)
-        # print(Invoice__DueDate)
         CustDetails=CustDetails.split()
         CustDetails.remove('BILL')
         CustDetails.remove('TO')
