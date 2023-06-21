@@ -119,7 +119,7 @@ def ExtractData(filepath):
             elif(IDs[index]==tableend):
                 last=IDs[index-7]
                 break
-        for row in range(first,last+1,8):
+        for row in range(first,last+5,8):
             Invoice__BillDetails__Name.append(l[row].strip())
             Invoice__BillDetails__Quantity.append(int(l[row+2]))
             Invoice__BillDetails__Rate.append(int(l[row+4]))
